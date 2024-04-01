@@ -2,7 +2,7 @@ import Markdown from 'react-markdown';
 import Header from "@/pages/component/header";
 import {useEffect, useState} from "react";
 import formatDate from '@/util/formatDate'
-import {router} from "next/client";
+import {router} from "next/router";
 
 
 export default function Index() {
