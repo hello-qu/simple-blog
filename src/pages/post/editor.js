@@ -2,7 +2,7 @@ import {forwardRef, useImperativeHandle, useState} from "react";
 import Markdown from 'react-markdown';
 
 
-// eslint-disable-next-line react/display-name
+
 const MarkdownEditor = forwardRef((props, ref) => {
   const [isPreview, setPreview] = useState(false);
   const [content, setContent] = useState("");
@@ -36,6 +36,6 @@ const MarkdownEditor = forwardRef((props, ref) => {
 
   )
 })
-
+MarkdownEditor.displayName = 'MarkdownEditor'
 
 export default MarkdownEditor
