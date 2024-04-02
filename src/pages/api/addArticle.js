@@ -1,10 +1,12 @@
 
 import fsPromises from 'fs/promises';
 import path from 'path';
-const dataFilePath = path.join(process.cwd(), 'data.json');
+import checkTmp from "@/util/checkTmp";
+const dataFilePath = path.join('/tmp', 'data.json');
 
 export default async function addArticle(req, res) {
   try {
+    await checkTmp()
     const jsonData = await fsPromises.readFile(dataFilePath);
     const objectData = JSON.parse(jsonData);
     const reqBody = JSON.parse(req.body)
