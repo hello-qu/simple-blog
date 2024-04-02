@@ -1,40 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+本项目是使用 `next.js` 部署在 `vercel` 上的简易博客系统
 
-## Getting Started
+## 运行方式
 
-First, run the development server:
+1. 运行 `pnpm install` 安装依赖。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. 运行 `pnpm run dev` 启动本地项目
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/article.js`.
+在浏览器打开 [http://localhost:3000](http://localhost:3000) 即可看到效果 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 项目介绍
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+本项目采用 `next.js` 的服务端组件化开发。使用本地 `data.json` 文件作为临时存储方案，具备基本的文章阅读和提交功能。
 
-## Learn More
+## 已完成功能
 
-To learn more about Next.js, take a look at the following resources:
+ - [x] 文章列表查看
+ - [x] 文章详情查看
+ - [x] 文章提交
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 未完成功能
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [ ] 文章删除
+- [ ] 文章标签管理
+- [ ] 文章搜索
+- [ ] 接口的错误处理
